@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Selenium WebDriver
+    implementation 'org.seleniumhq.selenium:selenium-java:4.16.1'
+
+    // JUnit 5 (Jupiter)
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+
+    // WebDriver Manager (for automatic driver management)
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.2'
+}
+
+test {
+    useJUnitPlatform()
+    maxParallelForks = 9
+}
