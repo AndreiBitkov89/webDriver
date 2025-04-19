@@ -21,5 +21,6 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    systemProperties System.getProperties()
     maxParallelForks = 3
 }
