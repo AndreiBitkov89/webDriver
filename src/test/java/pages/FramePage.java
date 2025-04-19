@@ -1,10 +1,8 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 public class FramePage extends BasePage {
 
@@ -13,7 +11,7 @@ public class FramePage extends BasePage {
     }
 
     @FindBy(css = "frame[name='frame-header']")
-    WebElement frame;
+    private WebElement frame;
 
     public WebElement getFrame() {
         return frame;

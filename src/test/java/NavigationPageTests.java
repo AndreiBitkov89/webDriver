@@ -11,7 +11,6 @@ public class NavigationPageTests extends BaseTest {
     public void testNavigationPage(Navigation navigation) {
         mainPage.goToPage("Chapter 3", "navigation1.html");
         navigationPage.navigateAndCheckText(navigation);
-
     }
 
 
