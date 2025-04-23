@@ -19,16 +19,16 @@ public class NavigationPage extends BasePage {
     }
 
     @FindBy(css = "p.lead")
-    WebElement textField;
+    private WebElement textField;
 
     @FindBy(xpath = "//a[@href='navigation1.html']")
-    WebElement pageFirstLink;
+    private WebElement pageFirstLink;
 
     @FindBy(xpath = "//a[@href='navigation2.html']")
-    WebElement pageTwoLink;
+    private WebElement pageTwoLink;
 
     @FindBy(xpath = "//a[@href='navigation3.html']")
-    WebElement pageThreeLink;
+    private WebElement pageThreeLink;
 
     private final Map<Navigation, WebElement> navElements = Map.of(
             Navigation.FIRST, pageFirstLink,

@@ -21,7 +21,11 @@ public class MainPage extends BasePage {
         chapter.findElement(By.cssSelector("a[href='" + name + "']")).click();
         actualURL = driver.getCurrentUrl();
         assertTrue(actualURL.contains(name), "URL don't match");
+    }
 
+    @Step("Go to main page")
+    public MainPage goToMain(){
+        return this;
     }
 
 
